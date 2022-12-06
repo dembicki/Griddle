@@ -13,6 +13,8 @@ export default class RowDefinition extends Component {
     //The column value that should be used as the key for the row
     //if this is not set it will make one up (not efficient)
     rowKey: PropTypes.string,
+    
+    rowId: PropTypes.string,
 
     //The column that will be known used to track child data
     //By default this will be "children"
