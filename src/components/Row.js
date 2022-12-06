@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Row = ({ Cell, griddleKey, columnIds, onClick, onMouseEnter, onMouseLeave, style, className }) => (
+const Row = ({ Cell, griddleKey, columnIds, onClick, onMouseEnter, onMouseLeave, style, className, rowId }) => (
   <tr
     key={griddleKey}
     onClick={onClick}
@@ -16,6 +16,7 @@ const Row = ({ Cell, griddleKey, columnIds, onClick, onMouseEnter, onMouseLeave,
         columnId={c}
         style={style}
         className={className}
+        rowId={rowId}
       />
     ))}
   </tr>
